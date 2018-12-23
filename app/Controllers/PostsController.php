@@ -8,7 +8,7 @@ namespace App\Controllers;
  * @author Chanda Mulenga <stconeten@gmail.com>
  */
 
-class Posts
+class PostsController
 {
     public function __construct()
     {

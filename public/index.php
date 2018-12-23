@@ -1,4 +1,5 @@
 <?php
-  require_once __DIR__ . '/../app/bootstrap.php';
+require_once __DIR__ . '/../app/bootstrap.php';
 
-  $init = new App\Libraries\Core;
+/* Initialise application */
+new App\Libraries\Core;
