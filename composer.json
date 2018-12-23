@@ -4,21 +4,20 @@
   "type": "project",
   "autoload": {
     "psr-4": {
-      "App\\": "app/",
-      "Config\\": "config/",
-      "Database\\": "database/"
+      "App\\": "app",
+      "Config\\": "app/Config/",
+      "Database\\": "database/",
+      "Libraries\\": "app/Libraries/",
+      "Controllers\\": "app/Controllers",
+      "Models\\": "app/Models"
     }
   },
   "require": {
     "vlucas/phpdotenv": "^2.5"
   },
   "license": "MIT",
-  "authors": [
-    {
-      "name": "Chanda Mulenga",
-      "email": "stconeten@gmail.com",
-      "twitter": "@stctheproducer",
-      "github": "@stctheproducer"
-    }
-  ]
+  "authors": [{
+    "name": "Chanda Mulenga",
+    "email": "stconeten@gmail.com"
+  }]
 }
