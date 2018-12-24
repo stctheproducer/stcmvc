@@ -13,7 +13,9 @@
     }
   },
   "require": {
-    "vlucas/phpdotenv": "^2.5"
+    "vlucas/phpdotenv": "^2.5",
+    "illuminate/config": "^5.7",
+    "symfony/finder": "^4.2"
   },
   "license": "MIT",
   "authors": [{

@@ -16,8 +16,9 @@ class PagesController extends Controller
     {
         $data = [
             'name' => 'chanda',
+            'app'  => $this->config->get('config.app_name'),
         ];
-        $this->view('pages/index', ['name' => 'chanda']);
+        $this->view('pages/index', $data);
     }
 
     public function about()

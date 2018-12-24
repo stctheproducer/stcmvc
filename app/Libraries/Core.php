@@ -39,7 +39,6 @@ class Core
 
         call_user_func_array([$this->currentController, $this->currentMethod], $this->params);
     }
-
     /**
      * Returns the url after the domain from the browser as an array
      *
