@@ -68,8 +68,8 @@ class Controller
      */
     public function view($view, $data = [])
     {
-        if (file_exists(__DIR__ . '/../views/' . $view . '.php')) {
-            require_once __DIR__ . '/../views/' . $view . '.php';
+        if (file_exists(dirname(dirname(__DIR__)) . '/resources/views/' . $view . '.php')) {
+            require_once dirname(dirname(__DIR__)) . '/resources/views/' . $view . '.php';
         } else {
             die('View does not exist.');
         }

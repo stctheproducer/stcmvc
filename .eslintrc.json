@@ -26,6 +26,12 @@
     ],
     "eol-last": [
       "warn"
+    ],
+    "no-undef": [
+      "off"
+    ],
+    "no-empty": [
+      "off"
     ]
   }
 }

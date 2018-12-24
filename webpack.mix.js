@@ -12,8 +12,8 @@ let mix = require('laravel-mix');
  */
 
 mix.disableNotifications()
-  .js('public/js/src/app.js', 'public/js/')
-  .sass('public/sass/app.scss', 'public/css/');
+  .js('resources/assets/js/app.js', 'public/js')
+  .sass('resources/assets/sass/app.scss', 'public/css');
 
 // Full API
 // mix.js(src, output);

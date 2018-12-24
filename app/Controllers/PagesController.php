@@ -17,6 +17,7 @@ class PagesController extends Controller
         $data = [
             'name' => 'chanda',
             'app'  => $this->config->get('config.app_name'),
+            'root' => $this->config->get('config.app_root'),
         ];
         $this->view('pages/index', $data);
     }

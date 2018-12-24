@@ -8,6 +8,7 @@ $dotenv->load();
 
 return [
     'app_name'    => getenv('APP_NAME'),
-    'environment' => getenv('APP_ENV'),
-    'app_url'     => getenv('APP_URL'),
+    'environment' => env('APP_ENV'),
+    'app_url'     => env('APP_URL'),
+    'app_root'    => ROOT_PATH, // dirname(dirname(__FILE__)),
 ];
