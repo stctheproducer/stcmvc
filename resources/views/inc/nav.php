@@ -1,5 +1,5 @@
 <nav class="navbar navbar-expand-md navbar-dark bg-dark">
-    <a class="navbar-brand" href="#"><?php $data['app'] ?></a>
+    <a class="navbar-brand" href="#"><?php $data['app_name'];?></a>
     <button class="navbar-toggler d-lg-none" type="button" data-toggle="collapse" data-target="#collapseNav" aria-controls="collapseNav"
         aria-expanded="false" aria-label="Toggle navigation"></button>
     <div class="collapse navbar-collapse" id="collapseNav">

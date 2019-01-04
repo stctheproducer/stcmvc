@@ -12,13 +12,18 @@ use App\Libraries\Controller;
 
 class PagesController extends Controller
 {
+    public function __construct()
+    {
+        parent::__construct();
+    }
+
     public function index()
     {
         $data = [
-            'name' => 'chanda',
-            'app'  => $this->config->get('config.app_name'),
-            'root' => $this->config->get('config.app_root'),
+            'app_name' => $this->config->get('config.app_name'),
+            'app_root' => $this->config->get('config.app_root'),
         ];
+
         $this->view('pages/index', $data);
     }
 
