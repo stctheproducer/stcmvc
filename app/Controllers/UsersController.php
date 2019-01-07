@@ -228,13 +228,4 @@ class UsersController extends Controller
         Session::destroy();
         UrlRedirect::redirect($this->data['app_url'], 'users/login');
     }
-
-    public function isLoggedIn()
-    {
-        if (check('user_id')) {
-            return true;
-        } else {
-            return false;
-        }
-    }
 }

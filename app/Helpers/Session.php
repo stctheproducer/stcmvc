@@ -28,6 +28,16 @@ class Session
         return false;
     }
 
+    // Check if user is logged in
+    public static function isLoggedIn()
+    {
+        if (isset($_SESSION['user_id'])) {
+            return true;
+        } else {
+            return false;
+        }
+    }
+
     // Set session value
     public static function set($key, $value)
     {
