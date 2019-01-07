@@ -9,13 +9,15 @@
       "Database\\": "database/",
       "Libraries\\": "app/Libraries/",
       "Controllers\\": "app/Controllers",
-      "Models\\": "app/Models"
+      "Models\\": "app/Models",
+      "Helpers\\": "app/Helpers"
     }
   },
   "require": {
     "vlucas/phpdotenv": "^2.5",
     "illuminate/config": "^5.7",
-    "symfony/finder": "^4.2"
+    "symfony/finder": "^4.2",
+    "plasticbrain/php-flash-messages": "^1.0"
   },
   "license": "MIT",
   "authors": [{

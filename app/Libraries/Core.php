@@ -46,17 +46,18 @@ class Core
      */
     public function getUrl()
     {
-        // if (isset($_GET['url'])) {
-        //   $url = rtrim($_GET['url'], '/');
-        //   $url = filter_var($url, FILTER_SANITIZE_URL);
-        //   $url = explode('/', $url);
-        //   return $url;
-        // }
-        if (isset($_SERVER['REQUEST_URI'])) {
-            $url = trim($_SERVER['REQUEST_URI'], '/');
+        if (isset($_GET['url'])) {
+            $url = rtrim($_GET['url'], '/');
             $url = filter_var($url, FILTER_SANITIZE_URL);
             $url = explode('/', $url);
             return $url;
         }
+
+        // if (isset($_SERVER['REQUEST_URI'])) {
+        //     $url = trim($_SERVER['REQUEST_URI'], '/');
+        //     $url = filter_var($url, FILTER_SANITIZE_URL);
+        //     $url = explode('/', $url);
+        //     return $url;
+        // }
     }
 }

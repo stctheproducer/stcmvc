@@ -19,9 +19,8 @@ class PagesController extends Controller
 
     public function index()
     {
-        $data = [
-            'app_name' => $this->config->get('config.app_name'),
-            'app_root' => $this->config->get('config.app_root'),
+        $data = $this->data + [
+            'title' => 'SharePosts',
         ];
 
         $this->view('pages/index', $data);

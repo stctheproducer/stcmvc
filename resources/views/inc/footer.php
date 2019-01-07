@@ -1,3 +1,4 @@
-    <script src="<?php echo env('app_url'); ?>/js/app.js"></script>
+    </div>
+    <script src="<?php echo $data['app_url']; ?>/js/app.js"></script>
 </body>
 </html>

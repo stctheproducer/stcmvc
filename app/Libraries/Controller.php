@@ -15,6 +15,7 @@ class Controller
 {
     public $config;
     protected $paths = [];
+    public $data     = [];
 
     public function __construct()
     {
@@ -22,6 +23,12 @@ class Controller
         $this->setupPaths();
         $this->config = new Config();
         $this->config->loadConfigurationFiles($this->paths['config_path'], $this->getEnvironment());
+        $this->data = [
+            'app_name' => $this->config->get('config.app_name'),
+            'app_url'  => $this->config->get('config.app_url'),
+            'app_root' => $this->config->get('config.app_root'),
+        ];
+        session_start();
     }
     /**
      * Sets ups paths to needed files
@@ -56,7 +63,7 @@ class Controller
      */
     public function model($model)
     {
-        return new App\Models . $model;
+        return new App\Models . '\\' . $model;
     }
     /**
      * Returns a view
